@@ -60,11 +60,55 @@
         </div>-->
 
         <h1>Christophe Nozaradan</h1>
-        <h2>Work <span class="rotating">in progress ;-)</span></h2>
-        <div class="actions">
+        <h2><span class="rotating">PORTFOLIO</span></h2>
+        <h4 style="margin-bottom: 100px;">
+            <a href="https://be.linkedin.com/in/christophenozaradan" style="color:#555;" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a> 
+            <a href="https://github.com/cnoza" style="color:#555;" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+            <script type="text/javascript" language="javascript">
+              <!--
+              // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+              // Random encryption key feature coded by Andrew Moulden
+              // This code is freeware provided these four comment lines remain intact
+              // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+              { coded = "QkOKobJ8kS.jJDIOIUIj@dhIKt.QJh"
+                key = "P8M90jxSoIq1Ydi7EOT3QvWCzyB5tkZmLpwRNnJesauUKg4HXr2VcFDfAGb6lh"
+                shift=coded.length
+                link=""
+                for (i=0; i<coded.length; i++) {
+                  if (key.indexOf(coded.charAt(i))==-1) {
+                    ltr = coded.charAt(i)
+                    link += (ltr)
+                  }
+                  else {     
+                    ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                    link += (key.charAt(ltr))
+                  }
+                }
+              document.write("<a href='mailto:"+link+"' style='color:#555;' target='_blank'>")
+              }
+              //-->
+              </script><noscript>Sorry, you need Javascript on to email me.</noscript>
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+              </a>
+          </h4>
+        <div class="actions" style="margin-bottom: 30px;">
           <a href="#about" class="btn-get-started">About</a>
           <a href="#projects" class="btn-services">Projects</a>
         </div>
+        
       </div>
     </div>
   </section>
@@ -118,7 +162,7 @@
   About Section
   ============================-->
   <section id="about">
-    <div class="container wow fadeInUp">
+    <div class="container wow fadeInUp" style="min-height: 100vh;">
       <div class="row">
         <div class="col-md-12">
           <h3 class="section-title">About</h3>
@@ -127,9 +171,12 @@
       <div class="row">
           <div class="section-title-divider"></div>
           <div class="col-md-12">
-            <p class="section-description">I've been doing web development since 1999, mainly out of passion for web technologies. Back in 1999, I started with plain <strong>HTML/CSS</strong> and the Notepad editor, then moved to <strong>PHP/MySQL</strong>.  I then learned <strong>Wordpress</strong>, how to create plugins and customize Wordpress themes, how to integrate WP with other systems using webservices, etc.
+            <p class="section-description">I'm a theoretical physicist, eager to learn and passionate about teaching.  I love learning about Web technologies and Data Science.</p>
+            <p class="section-description">I've been doing web development since 1999, out of passion. Back in 1999, I started with plain <strong>HTML/CSS</strong> and the Notepad editor, then moved to <strong>PHP/MySQL</strong>.  I then learned <strong>Wordpress</strong>, how to create plugins and customize Wordpress themes, how to integrate WP with other systems using webservices, etc.
               Today, I'm getting up to date with the latest technologies in Front-/Back-end web developments: <strong>Bootstrap</strong>, <strong>CSS grid</strong>, <strong>Angular</strong>, <strong>jQuery</strong>, <strong>NodeJS</strong>, <strong>ReactJS</strong>, etc.  
               On the other hand, I've been learning <strong>Data Science</strong> techniques (see <a href="https://github.com/cnoza/DataAnalysis">here</a>).</p>
+            <p class="section-description">I'm currently working as a technical/functional trainer at Sopra Banking Software.</p>
+            <p class="section-description">I also play the violin by the way, not that it has to do with anything :-)</p>
           </div>
       </div>
     </div>
@@ -140,15 +187,23 @@
   Services Section
   ============================-->
   <section id="projects">
-    <div class="container wow fadeInUp">
+    <div class="container wow fadeInUp" style="min-height: 100vh;">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Projects</h3>
+          <h3 class="section-title" style="padding-top: 60px;">Projects</h3>
           <div class="section-title-divider"></div>
           <h4><strong>Web developments</strong></h4>
-          <p class="service-description">&mdash; Work in progress</p>
+          <p class="service-description" style="margin-bottom:15px;">Recent projects :</p>
+          <ul>
+              <li>Well... this website :-) &mdash; Technologies: HTML/CSS, Javascript, Bootstrap 4</li>
+          </ul>
+          <p class="service-description" style="margin-top:30px;margin-bottom:15px;">Older projects :</p>
+          <ul class="service-description" style="margin-bottom:30px;">
+            <li><a href="http://www.sybarius.net" target="_blank">http://www.sybarius.net</a> &mdash; Technologies: HTML/CSS, Javascript, PHP/MySQL</li>
+            <li><a href="http://www.ineadec.org" target="_blank">http://www.ineadec.org</a> &mdash; Technologies: HTML/CSS, Javascript, PHP/MySQL</li>
+          </ul>
           <h4><strong>Data Science</strong></h4>
-          <p class="service-description">&mdash; See my <a href="https://github.com/cnoza/DataAnalysis">Github repository</a>.</p>
+          <p class="service-description" style="padding-bottom: 50px;">See my <a href="https://github.com/cnoza/DataAnalysis/blob/master/README.md" target="_blank">Github repository</a>.</p>
         </div>
       </div>
 
