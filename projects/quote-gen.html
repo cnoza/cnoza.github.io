@@ -6,6 +6,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
         
         <script>
+
             $(document).ready(function() {
         
                 $("#getMessage").on("click", function(){
@@ -14,7 +15,8 @@
                                 url: 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=', 
                                 success: function(json) {
 
-                                    $(".message").html(json[0].content + "&#x2015; " + json[0].title);
+                                    $(".message").html(json[0].content + "&#x2015; " + json[0].title );
+                                    $(".tweet-quote").html("<a class=\"twitter-share-button\" href=\"https://twitter.com/intent/tweet?text=" + encodeURI(json[0].content) +  "\">Tweet</a>");
 
                                 },
                                 cache: false
@@ -49,6 +51,8 @@
                     <button id = "getMessage" class = "btn btn-primary">
                     Get quote
                     </button>
+                    <div class="tweet-quote" style="margin-top:15px;">
+                    </div>
                 </div>
             </div>
         </div>
