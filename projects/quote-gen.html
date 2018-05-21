@@ -10,10 +10,14 @@
         
                 $("#getMessage").on("click", function(){
                     
-                    $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(json) {
+                    $.ajax( {
+                                url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=', 
+                                success: function(json) {
 
-                        $(".message").html(json[0].content + "&#x2015; " + json[0].title);
-                        //$(".message").html(JSON.stringify(json));
+                                    $(".message").html(json[0].content + "&#x2015; " + json[0].title);
+
+                                },
+                                cache: false
 
                     });
                     
